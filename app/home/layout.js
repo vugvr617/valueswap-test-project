@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeLayout = ({ children }) => {
   return (
-    <div className="w-screen h-screen bg-gradient-sides text-white">
+    <div className="w-screen  flex items-center justify-center h-screen bg-gradient-sides text-white">
         <video
           autoPlay
           muted
