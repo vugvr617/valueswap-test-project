@@ -13,7 +13,7 @@ const { chains, publicClient } = configureChains(
 
 const { connectors } = getDefaultWallets({
   appName: "Valueswap Test Project",
-  projectId: process.env.PROJECT_ID,
+  projectId: "def2fb9fdadc2628e994055f9d94e781",
   chains,
 });
 
@@ -22,6 +22,7 @@ const wagmiConfig = createConfig({
   connectors,
   publicClient,
 });
+
 const HomeLayout = ({ children }) => {
   return (
     <WagmiConfig config={wagmiConfig}>
