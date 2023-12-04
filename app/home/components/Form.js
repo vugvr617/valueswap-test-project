@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { TfiExchangeVertical } from "react-icons/tfi";
 import Select from "./Select";
+import CustomConnectButton from "./CustomConnectButton";
 
 export const Form = ({ coins }) => {
   const [sourceCurrency, setSourceCurrency] = useState(null);
@@ -42,7 +43,7 @@ export const Form = ({ coins }) => {
           setCurrentCurrency={setDestinationCurrency}
         />
       </div>
-      <button className="w-full bg-white font-bold text-2xl text-center h-16 text-black">Connect Wallet</button>
+      <CustomConnectButton />
     </>
   );
 };

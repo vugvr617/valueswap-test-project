@@ -23,7 +23,6 @@ const Select = ({
   const handleSearch = ({ target: { value: input } }) => {
     setSearch(input);
     if (!input) return setDisplayedCoins(coins);
-    console.log(input);
     setDisplayedCoins(
       coins.filter((coin) =>
         coin.name.toLowerCase().includes(input.toLowerCase())
